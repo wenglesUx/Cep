@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400&display=swap');
+
+body{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    overflow-x: hidden;
+   
+
+}
+.top-barr{
+    margin-top:-30px;
+    height: 125px;
+    width:100vw;
+    background-color: rgb(0, 81, 255);
+    box-shadow: 0px  7px 8px #ccc;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Titillium';
+
+    
+}
+h1{
+text-transform: uppercase;
+color:white;
+
+}
+img{
+    width:80px;
+    height: 80px;
+}
+.info{
+    font-family: 'Prompt';
+    font-size: 60px;
+    font-weight: 100;
+
+   background-color:rgb(231, 231, 231);
+   border-radius: 10px;
+   box-shadow: 0px  7px 5px #ccc;
+   text-align: center;
+  max-width: 80vw;
+  padding: 15px 0px;
+  margin-top: 30px;
+  
+}
+.box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.search_barr{
+    flex-direction: row;
+    display: flex;
+
+}
+
+.inputvalue{
+    margin-top: 100px;
+    width: 600px;
+    height:50px;
+    text-align: center;
+    font-size: 45px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Prompt';
+    font-weight: 100;
+}
+#simbol{
+    height: 120px;
+}
+.button{
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-top: 100px;
+    height:55.1px;
+    width: 60px;
+}
+.cep,.logradouro,  .complemento{
+    font-size:30px;
+    text-align:center;
+    font-size:30px;
+    font-style: italic,;
+    font-family: 'Titillium';
+    width: auto;
+    padding:0 30px;
+   border: 2px solid  #94b5fa;
+   color:rgb(119, 119, 119);
+   border-radius: 15px;
+ 
+}
+
+
+
+.logradouro{
+    min-height: 45px;
+    overflow-x: hidden;
+    
+}
+.complemento{
+  
+}
+.bairro{
+    min-height: 45px;
+    overflow-x: hidden;
+    
+    
+}
+.localidade{}
+
+.sec1, .sec2, .sec3{
+    width: 70vw;
+    
+    display:flex; 
+    padding-top:20px;
+}
+.column{
+    height:100px;
+    width:70vw;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+}
+in{
+    text-transform: uppercase;
+    color:#777
+}
+p{
+    text-align:center;
+    font-size:30px;
+    font-style: italic,;
+    font-family: 'Prompt';
+    width: 200px;
+   
+   border: 2px solid  #94b5fa;
+   color:rgb(119, 119, 119);
+   border-radius: 15px;
+   
+
+    
+}
