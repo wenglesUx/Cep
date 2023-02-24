@@ -4,78 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imagem/location.png" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>consultor de cep</title>
 </head>
 <body>
-<div class="top-barr">
-    <h1>encontre atraves do cep</h1>
-    <img src="/imagem/cepfinder.png">
-</div>
 
-<div class="info"> Encontre as informações mais relevantes de uma cidade atraves do Cep</div>
-    <div class="box">
-        
-        <div class="search_barr">
-            <input type="text" class="inputvalue" placeholder="Digite o Cep...">
-            <button type="submit" value="submit" class="button">🔎</button>
+<header id="home">
+    <div class="header container">
+        <div id="logo">
+            <img src="/imagem/cepfinder.png" alt="">
         </div>
-        <div class="sec1">
-            <div class="column">
-                <in> CEP</in>
-                <div class="cep"></div>
-            </div>
-            <div class="column">
-                <in> LOGRADOURO</in>
-                <div class="logradouro"></div>
 
-            </div>
-          
-        </div>
-            
-
-        <div class="sec2">
-            <div class="column">
-                <in> COMPLEMENTO</in>
-                <p class="complemento"></p>
-            </div>
-            <div class="column">
-                <in> BAIRRO</in>
-                <p class="bairro"></p>
-            </div>
-            <div class="column">
-                <in> LOCALIDADE</in>
-                <p class="localidade"></p>
-            </div>
-            <div class="column">
-                 <in> UF</in>
-                <p class="uf"></p>
-            </div>
-           
-        </div>
-      
-        <div class="sec3" >
-            <div class="column">
-                <in> IBGE</in>
-                 <p class="ibge"></p>
-            </div>
-            <div class="column">
-                <in> gia</in>
-                <p class="gia"></p>
-            </div>
-            <div class="column">
-                <in> ddd</in>
-                 <p class="ddd"></p>
-            </div>
-            
-           
-
-        </div>
-        
-        
-
+        <nav class="menu">
+            <ul>
+                <a href="#home">Sobre nos</a>
+                <a href="#section">Busque por um cep</a>
+                <a href="#footer">Mais informações</a>
+            </ul>
+        </nav>
     </div>
-   
+    <div class="banner container">
+        <div id="leftSide">
+            <h1>
+                Informações completas apenas com <strong>cep</strong>
+            </h1>
+            <p>
+                Atraves do <strong>cep finder</strong>   encontre as informações
+                necessarias para  as suas atividades
+            </p>
+           
+        </div>
+        <div id="rightSide">
+            <div id="img">
+                <img src="/imagem/Search-pana.svg" alt="" id="bannerImg">
+            </div>
+        </div>
+    </div>
+</header>
+<section id="section">
+    <div class="sectionArea container" >
+        <div class="box">
+            
+            <div class="search_barr">
+                <input type="text" class="inputvalue" placeholder="Digite o Cep...">
+                <button type="submit" value="submit" class="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div class="infoArea">
+                <div id="fistColumn">
+                     <p>cep</p>
+                    <span class="cep"></span>
+                    <p>Logradouro</p>
+                    <span class="logradouro"></span>
+                    <p>complemento</p>
+                    <span class="complemento"></span>
+                
+                </div>
+                <div id="thirdColumn">
+                    <p>bairro</p>
+                    <span class="bairro"></span>
+                    <p>localidade</p>
+                    <span class="localidade"></span>
+                    <p>uf</p>
+                    <span class="uf"></span>
+                </div>
+                <div id="secondColumn">
+                    <p>ibge</p>
+                    <span class="ibge"></span>
+                    <p>gia</p>
+                    <span class="gia"></span>
+                    <p>ddd</p>
+                    <span class="ddd"></span>
+                </div>
+            </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="footerArea container"></div>
+</footer>
+
 
 
     <script src="/script.js"></script>

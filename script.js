@@ -1,7 +1,7 @@
 var inputvalue = document.querySelector('.inputvalue')
 var button = document.querySelector('.button')
 var cep = document.querySelector('.cep')
-
+var load = document.querySelector('#load')
 var logradouro = document.querySelector('.logradouro')
 var complemento = document.querySelector('.complemento')
 var bairro = document.querySelector('.bairro')
@@ -10,14 +10,17 @@ var uf = document.querySelector('.uf')
 var ibge = document.querySelector('.ibge')
 var gia = document.querySelector('.gia')
 var ddd = document.querySelector('.ddd')
-var siafi = document.querySelector('.siafi')
 
-button.addEventListener('click',function(){
+
+button.addEventListener('click',runfunction)
+
+function runfunction(){
 
 fetch('https://viacep.com.br/ws/'+inputvalue.value+'/json/')
+
 .then(response => response.json())
 .then(data => {
-
+    load.classList.add('hide')
  var cepvalue = data['cep'];
  var logradourovalue = data['logradouro'];
  var complementovalue = data['complemento'];
@@ -29,7 +32,7 @@ fetch('https://viacep.com.br/ws/'+inputvalue.value+'/json/')
  var ibgevalue = data['ibge'];
  var giavalue = data['gia'];
  var dddvalue = data['ddd'];
- var siafivalue = data['siafi'];
+
 
 
  cep.innerHTML =cepvalue;
@@ -42,10 +45,17 @@ fetch('https://viacep.com.br/ws/'+inputvalue.value+'/json/')
  ibge.innerHTML =ibgevalue;
  gia.innerHTML =giavalue;
  ddd.innerHTML =dddvalue;
- siafi.innerHTML =siafivalue;
+ 
 
 
 })
-.catch(err => alert("cep não identificado"))
+}
+
+
+inputvalue.addEventListener('keydown',(e) =>{
+ if (e.keyCode !== 13)return
+        runfunction()
+    
 
 })
+   
