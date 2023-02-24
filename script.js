@@ -20,7 +20,7 @@ fetch('https://viacep.com.br/ws/'+inputvalue.value+'/json/')
 
 .then(response => response.json())
 .then(data => {
-    load.classList.add('hide')
+    
  var cepvalue = data['cep'];
  var logradourovalue = data['logradouro'];
  var complementovalue = data['complemento'];
@@ -49,7 +49,7 @@ fetch('https://viacep.com.br/ws/'+inputvalue.value+'/json/')
 
 
 })
-}
+} 
 
 
 inputvalue.addEventListener('keydown',(e) =>{
